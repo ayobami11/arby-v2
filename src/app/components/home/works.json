@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "category": "Transtura",
+        "title": "Order buses at cheap and convenient prices.",
+        "description": "Redesigning a mobility application to ease user transportation.",
+        "imageUrl": "/assets/images/transtura.png"
+    },
+    {
+        "id": "2",
+        "category": "Nithub Redesign",
+        "title": "Redesigning a web application for a startup incubator.",
+        "description": "Redesigning a mobility application to ease user transportation.",
+        "imageUrl": "/assets/images/nithub-redesign.png"
+    },
+    {
+        "id": "3",
+        "category": "Orvalon Digital",
+        "title": "Order buses at cheap and convenient prices.",
+        "description": "Redesigning a mobility application to ease user transportation.",
+        "imageUrl": "/assets/images/orvalon-digital.png"
+    },
+    {
+        "id": "4",
+        "category": "Salescona",
+        "title": "Design System.",
+        "description": "Redesigning a mobility application to ease user transportation.",
+        "imageUrl": "/assets/images/salescona.png"
+    },
+    {
+        "id": "5",
+        "category": "Expenditure",
+        "title": "Spending your money wisely.",
+        "description": "Redesigning a mobility application to ease user transportation.",
+        "imageUrl": "/assets/images/expenditure.png"
+    },
+    {
+        "id": "6",
+        "category": "Gleephoria NDA Bound",
+        "title": "An online dating application.",
+        "description": "Redesigning a mobility application to ease user transportation.",
+        "imageUrl": "/assets/images/expenditure.png"
+    },
+    {
+        "id": "7",
+        "category": "Expenditure",
+        "title": "Spending your money wisely.",
+        "description": "Redesigning a mobility application to ease user transportation.",
+        "imageUrl": "/assets/images/expenditure.png"
+    }
+]

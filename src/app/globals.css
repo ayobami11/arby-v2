@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --color-brown: 16deg 71% 27%;
+    --color-white: 0deg 0% 100%;
+    --color-orange: 18deg 100% 50%;
+    --color-gray-100: 192deg 6% 17%;
+    --color-gray-300: 192deg 3% 30%;
+    --color-gray-500: 0deg 0% 58%;
+    --color-gray-700: 0deg 0% 78%;
+    --color-yellow: 51deg 100% 50%;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+
+}
