@@ -22,6 +22,9 @@ const config: Config = {
       "yellow": "hsl(var(--color-yellow))"
     },
     extend: {
+      screens: {
+        "xs": "480px"
+      },
       fontFamily: {
         sans: ["var(--font-sf-pro-display)", ...defaultTheme.fontFamily.sans]
       }

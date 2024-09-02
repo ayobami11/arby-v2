@@ -1,15 +1,19 @@
 import Header from "@/components/Header";
-import AboutSection from "@/components/home/AboutSection";
-import WorkSection from "@/components/home/WorkSection";
+import Introduction from "./components/Introduction";
+import Skills from "@/components/home/Skills";
+import Socials from "@/components/Socials";
 
 export default function Home() {
   return (
-    <div className="font-sans relative pt-8 pb-12 text-white bg-[url('/assets/images/page-bg.png')]">
-      <Header />
-      <main className="w-[90%] mx-auto">
-        <AboutSection />
-        <WorkSection />
-      </main>
+    <div className="min-h-screen font-sans py-8 text-white bg-[linear-gradient(hsla(200deg,10%,12%,0.3),hsla(200deg,10%,12%,0.3)),url('/assets/images/page-bg.png')]">
+      <div className="w-[90%] mx-auto">
+        <Header />
+        <main className="flex-1">
+          <Introduction />
+          <Skills />
+          <Socials />
+        </main>
+      </div>
     </div>
   );
 }
