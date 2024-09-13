@@ -10,106 +10,104 @@ import behanceIcon from "../../../public/assets/icons/behance.svg";
 const Socials = () => {
 
     return (
-        <section>
-            <ul className="text-2xl flex justify-between gap-4 max-w-[275px] mx-auto">
-                <li>
-                    <a
-                        href="mailto:arby.jegede@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Email"
-                        className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                    >
-                        <Image 
-                            src={mailIcon}
-                            alt="Mail icon"
-                            className=""    
-                        />
-                        <span className="sr-only">Mail</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/abisola-jegede"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Linkedin"
-                        className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                    >
-                        <Image 
-                            src={linkedinIcon}
-                            alt="Linkedin icon"
-                            className=""    
-                        />
-                        <span className="sr-only">Linkedin</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://dribbble.com/AbisolaJegede"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Dribbble"
-                        className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                    >
-                        <Image 
-                            src={dribbbleIcon}
-                            alt="Dribbble icon"
-                            className=""    
-                        />
-                        <span className="sr-only">Dribbble</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.instagram.com/arby_ui.ux"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Instagram"
-                        className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                    >
-                        <Image 
-                            src={instagramIcon}
-                            alt="Instagram icon"
-                            className=""    
-                        />
-                        <span className="sr-only">Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://x.com/arby981"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="X (formerly, Twitter)"
-                        className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                    >
-                        <Image 
-                            src={xIcon}
-                            alt="X icon"
-                            className=""    
-                        />
-                        <span className="sr-only">Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.behance.net/abisolajegedea"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Behance"
-                        className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                    >
-                        <Image 
-                            src={behanceIcon}
-                            alt="Behance icon"
-                            className=""    
-                        />
-                        <span className="sr-only">Behance</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
+        <ul className="text-2xl flex flex-wrap justify-between gap-4 max-w-[350px] mx-auto">
+            <li>
+                <a
+                    href="mailto:arby.jegede@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Email"
+                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
+                >
+                    <Image
+                        src={mailIcon}
+                        alt="Mail icon"
+                        className=""
+                    />
+                    <span className="sr-only">Mail</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="https://www.linkedin.com/in/abisola-jegede"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Linkedin"
+                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
+                >
+                    <Image
+                        src={linkedinIcon}
+                        alt="Linkedin icon"
+                        className=""
+                    />
+                    <span className="sr-only">Linkedin</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="https://dribbble.com/AbisolaJegede"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Dribbble"
+                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
+                >
+                    <Image
+                        src={dribbbleIcon}
+                        alt="Dribbble icon"
+                        className=""
+                    />
+                    <span className="sr-only">Dribbble</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="https://www.instagram.com/arby_ui.ux"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Instagram"
+                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
+                >
+                    <Image
+                        src={instagramIcon}
+                        alt="Instagram icon"
+                        className=""
+                    />
+                    <span className="sr-only">Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="https://x.com/arby981"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="X (formerly, Twitter)"
+                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
+                >
+                    <Image
+                        src={xIcon}
+                        alt="X icon"
+                        className=""
+                    />
+                    <span className="sr-only">Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="https://www.behance.net/abisolajegedea"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Behance"
+                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
+                >
+                    <Image
+                        src={behanceIcon}
+                        alt="Behance icon"
+                        className=""
+                    />
+                    <span className="sr-only">Behance</span>
+                </a>
+            </li>
+        </ul>
     )
 
 }
