@@ -12,11 +12,11 @@ import Socials from "@/components/Socials";
 const BlogPage = () => {
     return (
         <>
-            <div className="min-h-screen font-sans pt-8 text-white bg-[linear-gradient(hsla(200deg,10%,12%,0.3),hsla(200deg,10%,12%,0.3)),url('/assets/images/page-bg.png')]">
+            <div className="pt-8">
                 <div className="w-[90%] mx-auto">
                     <Header />
                 </div>
-                <main className="flex-1">
+                <main>
                     <div className="w-[90%] mx-auto mt-8 mb-24">
                         <Introduction />
                         <p className="text-lg md:text-2xl text-white/[0.69]">

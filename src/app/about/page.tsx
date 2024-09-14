@@ -12,11 +12,11 @@ import img4 from "../../../public/assets/images/Group 119108.png";
 const About = () => {
 
     return (
-        <div className="min-h-screen font-sans pt-8 text-white bg-[linear-gradient(hsla(200deg,10%,12%,0.3),hsla(200deg,10%,12%,0.3)),url('/assets/images/page-bg.png')]">
+        <div className="pt-8 ">
             <div className="w-[90%] mx-auto">
                 <Header />
             </div>
-            <main className="flex-1">
+            <main>
                 <section className="text-white/60 md:mb-20">
                     <blockquote className="text-white italic text-2xl font-extralight mt-8 mx-[5%] mb-10 md:text-4xl">
                         “I am a <span className="font-bold">nature</span> loving <span className="font-bold">sweet-tooth</span> human who loves

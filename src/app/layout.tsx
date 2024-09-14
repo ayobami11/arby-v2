@@ -18,7 +18,7 @@ export default function RootLayout({
     lang="en"
     className={`${sfProDisplayFont.variable}`}
     >
-      <body className="min-h-screen">{children}</body>
+      <body className="bg-[hsl(204,8%,12%)] font-sans text-white">{children}</body>
     </html>
   );
 }

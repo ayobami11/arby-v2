@@ -8,10 +8,10 @@ import driveIcon from "../../../public/assets/icons/drive.svg";
 
 const Facilitation = () => {
     return (
-        <div className="min-h-screen font-sans pt-8 text-white bg-[linear-gradient(hsla(200deg,10%,12%,0.3),hsla(200deg,10%,12%,0.3)),url('/assets/images/page-bg.png')]">
+        <div className="pt-8">
             <div className="w-[90%] mx-auto">
                 <Header />
-                <main className="flex-1">
+                <main>
                     <div>
                         <Introduction />
                         <p className="text-lg leading-8 text-gray-700 mb-16">I am a self taught design thinking facilitator with over a year of professional experience.</p>
