@@ -10,7 +10,7 @@ import behanceIcon from "../../../public/assets/icons/behance.svg";
 const Socials = () => {
 
     return (
-        <ul className="text-2xl flex flex-wrap justify-between gap-4 max-w-[350px] mx-auto">
+        <ul className="text-2xl grid grid-cols-[repeat(auto-fill,40px)] place-content-center gap-4 max-w-[350px] mx-auto py-8">
             <li>
                 <a
                     href="mailto:arby.jegede@gmail.com"
