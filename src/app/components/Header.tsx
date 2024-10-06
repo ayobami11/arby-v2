@@ -22,10 +22,12 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <Link
-                href="/contact"
+            <a
+                href="mailto:arby.jegede@gmail.com"
+                rel="noopener noreferrer"
+                title="Email"
                 className="bg-brown py-3 px-4 rounded-3xl"
-            >Contact me</Link>
+            >Contact me</a>
         </header>
     )
 }

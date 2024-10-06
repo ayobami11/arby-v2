@@ -14,7 +14,6 @@ const Socials = () => {
             <li>
                 <a
                     href="mailto:arby.jegede@gmail.com"
-                    target="_blank"
                     rel="noopener noreferrer"
                     title="Email"
                     className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
