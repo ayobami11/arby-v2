@@ -71,19 +71,23 @@ const Facilitation = () => {
                                 </li>
                             </ol>
                         </article>
-                        <div className="self-end bg-gray-300/[0.21] rounded-3xl grid gap-6 place-content-center place-items-center p-6 md:h-[317px]">
+                        <a
+                            href="https://drive.google.com/drive/folders/1oV1DZzaO0hQViWnUjT_XbfOjZ_ZfpYWc?usp=sharing"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="self-end bg-gray-300/[0.21] rounded-3xl grid gap-6 place-content-center place-items-center p-6 md:h-[317px]">
                             <Image
                                 src={driveIcon}
                                 alt=""
-                             />
+                            />
                             <p
                                 className="italic font-extralight text-base leading-6 max-w-[370px]"
                             >Check out links to some of the slides and images from several design thinking workshops I have hosted.</p>
-                        </div>
+                        </a>
                     </section>
 
                     <div className="pt-40 pb-8">
-                    <Socials />
+                        <Socials />
                     </div>
                 </main>
             </div>

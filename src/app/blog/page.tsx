@@ -93,7 +93,11 @@ const BlogPage = () => {
                                 </figcaption>
                             </figure>
                         </article>
-                        <div className="max-w-[520px] bg-gray-300/[0.21] grid place-content-center max-h-[580px] xs:rounded-[0.875rem]">
+                        <a
+                            href="https://arbydesign.hashnode.dev"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="max-w-[520px] bg-gray-300/[0.21] grid place-content-center max-h-[580px] xs:rounded-[0.875rem]">
                             <figure className="flex items-center gap-4">
                                 <Image
                                     src={blogIcon}
@@ -101,7 +105,7 @@ const BlogPage = () => {
                                 />
                                 <figcaption className="font-extralight italic text-2xl md:text-[3.125rem]">Visit my blog</figcaption>
                             </figure>
-                        </div>
+                        </a>
                     </section>
 
                     <div className="pb-8 px-[5%]">

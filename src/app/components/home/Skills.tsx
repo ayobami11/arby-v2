@@ -19,40 +19,41 @@ const SkillsSection = () => {
 
     return (
         <section>
-            <ul className="text-2xl overflow-x-auto flex gap-4 my-20">
+            <ul className="text-2xl overflow-x-auto flex justify-between gap-4 my-20">
                 <li>
                     <button
                         onClick={() => setDescription("product-design")}
-                        className="italic font-light border-2 border-[transparent] hover:border-gray-300 rounded-2xl p-4 whitespace-nowrap"
+                        className="cursor-custom italic font-light border-2 border-[transparent] hover:border-gray-300 rounded-2xl py-8 px-4 whitespace-nowrap"
                     >Product Designer</button>
                 </li>
                 <li>
                     <button
                         onClick={() => setDescription("facilitation")}
-                        className="italic font-light border-2 border-[transparent] hover:border-gray-300 rounded-2xl p-4 whitespace-nowrap"
+                        className="cursor-custom italic font-light border-2 border-[transparent] hover:border-gray-300 rounded-2xl py-8 px-4 whitespace-nowrap"
                     >Design Thinking Facilitator</button>
                 </li>
                 <li>
                     <button
                         onClick={() => setDescription("motion-design")}
-                        className="italic font-light border-2 border-[transparent] hover:border-gray-300 rounded-2xl p-4 whitespace-nowrap"
+                        className="cursor-custom italic font-light border-2 border-[transparent] hover:border-gray-300 rounded-2xl py-8 px-4 whitespace-nowrap"
                     >Motion Designer</button>
                 </li>
                 <li>
                     <button
                         onClick={() => setDescription("blog")}
-                        className="italic font-light border-2 border-[transparent] hover:border-gray-300 rounded-2xl p-4 whitespace-nowrap"
+                        className="cursor-custom italic font-light border-2 border-[transparent] hover:border-gray-300 rounded-2xl py-8 px-4 whitespace-nowrap"
                     >Writer</button>
                 </li>
             </ul>
             <div
-                className="border-l-[5px] border-orange p-1 pl-5 text-xl leading-8 text-gray-700 mb-28"
+                className="group relative border-l-[5px] border-orange p-1 pl-5 text-xl leading-8 text-gray-700 mb-28"
             >
                 <p>{skills[description]}</p>
                 <Link
                     href={`/${description}`}
-                    className="block"
-                >Explore</Link>
+                    // className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-orange text-white font-medium group-hover:grid place-items-center w-[143px] h-[143px] rounded-full"
+                    className="block underline mt-2 md:hidden md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:bg-orange md:text-white md:no-underline md:font-medium md:group-hover:grid md:place-items-center md:w-[143px] md:h-[143px] md:rounded-full"
+                >Dive in</Link>
             </div>
         </section>
     )

@@ -10,7 +10,11 @@ const Header = () => {
             <nav className="hidden sm:block">
                 <ul className="flex gap-8 text-xl text-gray-700">
                     <li>
-                        <Link href="/">Resume</Link>
+                        <a
+                            href="https://www.figma.com/proto/Uh5zZz8V5UfrzPF2gUXLUu/JEGEDE-ABISOLA-C.?node-id=114-2&scaling=scale-down-width&page-id=0%3A1"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >Resume</a>
                     </li>
                     <li>
                         <Link href="/about">About</Link>

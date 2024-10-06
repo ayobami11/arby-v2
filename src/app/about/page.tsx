@@ -18,12 +18,18 @@ const About = () => {
             </div>
             <main>
                 <section className="text-white/60 md:mb-20">
-                    <blockquote className="text-white italic text-2xl font-extralight mt-8 mx-[5%] mb-10 md:text-4xl">
+                    <blockquote className="relative text-white italic text-2xl font-extralight mt-8 mx-[5%] mb-10 md:text-4xl md:mb-24">
                         “I am a <span className="font-bold">nature</span> loving <span className="font-bold">sweet-tooth</span> human who loves
                         teaching, <span className="font-bold">icecream</span>  and an obsession for coffee. I love anything art,
                         music and <span className="font-bold">games</span>. During my free time, I volunteer as
-                        a <span className="font-bold">Community Manager</span> for a gaming Community called Bold. Wanna know what
-                        bold does, <span className="font-bold">click here</span>.”
+                        a <span className="font-bold">Community Manager</span> for a gaming Community called Bold.” Wanna know what
+                        Bold does?
+                        {" "}<a
+                            href="https://www.linkedin.com/company/bold-community/posts/?feedView=all"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="font-bold underline md:absolute md:right-0 md:-bottom-28 md:font-medium md:bg-orange md:w-[143px] md:h-[143px] md:rounded-full md:grid md:place-items-center md:no-underline md:text-2xl md:not-italic"
+                        >Learn more</a>
                     </blockquote>
                     <div className="flex flex-col items-center my-10 md:flex-row">
                         <Image
