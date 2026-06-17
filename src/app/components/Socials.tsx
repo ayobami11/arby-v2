@@ -1,114 +1,151 @@
-import Image from "next/image";
-
-import mailIcon from "../../../public/assets/icons/mail.svg";
-import linkedinIcon from "../../../public/assets/icons/linkedin.svg";
-import dribbbleIcon from "../../../public/assets/icons/dribbble.svg";
-import instagramIcon from "../../../public/assets/icons/instagram.svg";
-import xIcon from "../../../public/assets/icons/x.svg";
-import behanceIcon from "../../../public/assets/icons/behance.svg";
+"use client";
+import { useEffect, useState } from "react";
+import {
+  FaLinkedin,
+  FaXTwitter,
+  FaInstagram,
+  FaDribbble,
+  FaBehance,
+} from "react-icons/fa6";
 
 const Socials = () => {
+  const [theme] = useState("dark");
 
-    return (
-        <ul className="text-2xl grid grid-cols-[repeat(auto-fill,40px)] place-content-center gap-4 max-w-[350px] mx-auto py-8">
-            <li>
-                <a
-                    href="mailto:arby.jegede@gmail.com"
-                    rel="noopener noreferrer"
-                    title="Email"
-                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                >
-                    <Image
-                        src={mailIcon}
-                        alt="Mail icon"
-                        className=""
-                    />
-                    <span className="sr-only">Mail</span>
-                </a>
-            </li>
-            <li>
-                <a
-                    href="https://www.linkedin.com/in/abisola-jegede"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Linkedin"
-                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                >
-                    <Image
-                        src={linkedinIcon}
-                        alt="Linkedin icon"
-                        className=""
-                    />
-                    <span className="sr-only">Linkedin</span>
-                </a>
-            </li>
-            <li>
-                <a
-                    href="https://dribbble.com/AbisolaJegede"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Dribbble"
-                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                >
-                    <Image
-                        src={dribbbleIcon}
-                        alt="Dribbble icon"
-                        className=""
-                    />
-                    <span className="sr-only">Dribbble</span>
-                </a>
-            </li>
-            <li>
-                <a
-                    href="https://www.instagram.com/arby_ui.ux"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Instagram"
-                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                >
-                    <Image
-                        src={instagramIcon}
-                        alt="Instagram icon"
-                        className=""
-                    />
-                    <span className="sr-only">Instagram</span>
-                </a>
-            </li>
-            <li>
-                <a
-                    href="https://x.com/arby981"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="X (formerly, Twitter)"
-                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                >
-                    <Image
-                        src={xIcon}
-                        alt="X icon"
-                        className=""
-                    />
-                    <span className="sr-only">Twitter</span>
-                </a>
-            </li>
-            <li>
-                <a
-                    href="https://www.behance.net/abisolajegedea"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Behance"
-                    className="w-6 h-6 grid place-items-center rounded-full box-content p-2 bg-[hsl(200deg,9%,22%)]"
-                >
-                    <Image
-                        src={behanceIcon}
-                        alt="Behance icon"
-                        className=""
-                    />
-                    <span className="sr-only">Behance</span>
-                </a>
-            </li>
-        </ul>
-    )
+  const isDark = theme === "dark" ? true : false;
+  const muted = isDark ? "text-[#888888]" : "text-[#555555]";
+  const border = isDark ? "border-white/10" : "border-black/10";
+  const iconBg = isDark
+    ? "text-[#888888] border-white/10"
+    : "text-[#555555] border-black/10";
+  const footerColumns = [
+    {
+      title: "Navigation",
+      links: [
+        { name: "Work", target: "#work" },
+        { name: "About", target: "#about" },
+        { name: "Facilitation", target: "/facilitation" },
+        { name: "Blog", target: "/blog" },
+        { name: "Playground", target: "/working" },
+      ],
+      isExternal: false,
+    },
+    {
+      title: "Connect",
+      links: [
+        {
+          name: "LinkedIn",
+          target: "https://www.linkedin.com/in/abisola-jegede",
+        },
+        { name: "Twitter / X", target: "https://x.com/arby981" },
+        { name: "Dribbble", target: "https://dribbble.com/AbisolaJegede" },
+        { name: "Behance", target: "https://www.behance.net/abisolajegede" },
+        { name: "Instagram", target: "https://www.instagram.com/rbyinmotion/" },
+      ],
+      isExternal: true,
+    },
+  ];
 
-}
+  return (
+    <footer className="py-16 max-w-full mx-auto">
+      <div className="mx-auto">
+        <div className="max-w-[1250px] mx-auto flex flex-col justify-between gap-20 lg:flex-row lg:items-start px-6">
+          <div className="max-w-sm">
+            <h3 className="mb-3 text-2xl font-bold tracking-tight">
+              Abisola Jegede
+            </h3>
+            <p className={`text-sm leading-7 ${muted}`}>
+              Product Designer and Facilitator crafting thoughtful digital
+              experiences, motion systems, and product interactions.
+            </p>
+          </div>
+
+          <div className="grid gap-12 sm:grid-cols-2 md:gap-24">
+            {footerColumns.map((col) => (
+              <div key={col.title} className="lg:min-w-[150px]">
+                <h4 className="mb-5 text-xs font-semibold uppercase tracking-[0.08em]">
+                  {col.title}
+                </h4>
+                <ul className="space-y-3">
+                  {col.links.map((link) => (
+                    <li key={link.name}>
+                      <a
+                        href={link.target}
+                        target={col.isExternal ? "_blank" : undefined}
+                        rel={col.isExternal ? "noopener noreferrer" : undefined}
+                        className={`text-sm transition hover:text-[#FF6A2A] ${muted}`}
+                      >
+                        {link.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div
+          className={`mt-12 mx-10 gap-6 border-t ${border}`}
+        >
+          <div className={`flex flex-col mx-7 md:flex-row items-center pt-8 justify-between`}>
+          <p className={`text-sm ${muted}`}>
+            &copy; {new Date().getFullYear()} Abisola Jegede. All rights
+            reserved.
+          </p>
+          <div className="flex gap-3">
+            {[
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/abisola-jegede",
+                icon: FaLinkedin,
+              },
+              {
+                label: "Twitter",
+                href: "https://x.com/arby981",
+                icon: FaXTwitter,
+              },
+              {
+                label: "Instagram",
+                href: "https://www.instagram.com/rbyinmotion/",
+                icon: FaInstagram,
+              },
+              {
+                label: "Dribbble",
+                href: "https://dribbble.com/AbisolaJegede",
+                icon: FaDribbble,
+              },
+              {
+                label: "Behance",
+                href: "https://www.behance.net/abisolajegede",
+                icon: FaBehance,
+              },
+            ].map((item) => {
+              const IconComponent = item.icon;
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  aria-label={item.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex h-10 w-10 items-center justify-center rounded-xl border transition hover:-translate-y-0.5 hover:bg-[#FF6A2A] hover:text-white ${iconBg}`}
+                  title={item.label}
+                >
+                  {IconComponent ? (
+                    <IconComponent className="h-[18px] w-[18px]" />
+                  ) : (
+                    <span className="text-xs font-bold">
+                      {item.label.slice(0, 1)}
+                    </span>
+                  )}
+                </a>
+              );
+            })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Socials;
